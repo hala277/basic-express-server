@@ -36,12 +36,12 @@ app.get('/',(request,response) => {
     response.send('home route')
 })
 
+// 500 rout handler
+app.use(errorHandler);
 
 // 404 rout handler
 app.use(errorHandler2);
 
-// 500 rout handler
-app.use(errorHandler);
 
 
 // start function
